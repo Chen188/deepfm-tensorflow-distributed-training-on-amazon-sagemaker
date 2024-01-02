@@ -33,6 +33,8 @@ import tensorflow as tf
 from sagemaker_tensorflow import PipeModeDataset
 from tensorflow.contrib.data import map_and_batch
 
+print(os.system('ls -Rl /opt/ml/input/data/'))
+
 #################### CMD Arguments ####################
 FLAGS = tf.app.flags.FLAGS
 tf.app.flags.DEFINE_integer(
